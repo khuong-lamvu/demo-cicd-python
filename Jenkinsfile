@@ -27,7 +27,7 @@ pipeline {
             steps {
                 echo 'Running Docker container on port 5050...'
                 script {
-                    dockerImage.run('-p 192.168.1.8:5050:5050') // Map cổng 5050 trên IP 192.168.1.8
+                    dockerImage.run('-p 192.168.1.9:5050:5050') // Map cổng 5050 trên IP 192.168.1.8
                 }
             }
         }
